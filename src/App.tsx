@@ -1,11 +1,15 @@
-import { BrowserRouter, Route, Routes } from "react-router"
+import { BrowserRouter, Navigate, Route, Routes } from "react-router"
 import Home from "./pages/Home"
+import './styles/GlobalStyle.css'
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home/>} />
+        <Route path='/criar' element={<>criar</>} />
+        <Route path='/login' element={<>entrar</>} />
+        <Route path="*" element={<Navigate to="/" replace/>}/>
       </Routes>
     </BrowserRouter>
   )
