@@ -4,6 +4,9 @@ import './styles/GlobalStyle.css'
 import Register from "./pages/Register"
 import Login from "./pages/Login"
 import Services from "./pages/ServicesPage"
+import Consulta from "./pages/Consulta"
+import Teleconsulta from "./pages/TeleConsulta"
+import Historico from "./pages/Historico"
 
 function App() {
   return (
@@ -13,14 +16,14 @@ function App() {
         <Route path='/criar' element={<Register/>} />
         <Route path='/login' element={<Login/>} />
         <Route path='/home' element={<Services/>} />
-        <Route path='/agendamento' element={<>agendamento</>} />
-        <Route path='/teleconsulta' element={<>teleconsulta</>} />
+        <Route path='/agendamento' element={<Consulta/>} />
+        <Route path='/teleconsulta' element={<Teleconsulta/>} />
         <Route path='/tratamentos' element={<>tratamentos</>} />
         <Route path='/podomoto' element={<>podomoto</>} />
         <Route path='/servicos' element={<>servicos</>} />
         <Route path='/planos' element={<>planos</>} />
         <Route path='/perfil' element={<>perfil</>} />
-        <Route path='/historico' element={<>historico</>} />
+        <Route path='/historico' element={<Historico/>} />
         <Route path="*" element={<Navigate to="/" replace/>}/>
       </Routes>
     </BrowserRouter>

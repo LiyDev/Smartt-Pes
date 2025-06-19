@@ -22,7 +22,7 @@ const Services = () => {
 
     return (
         <ServicesContainer>
-            <Header title="Smartt Pés"/>
+            <Header title="Smartt Pés" isHome={true} />
             <MenuTitle>Menu Inicial</MenuTitle>
             <MenuContainer>
                 <MenuButton onClick={() => navigate('/agendamento')}>

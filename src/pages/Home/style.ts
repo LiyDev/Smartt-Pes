@@ -40,3 +40,11 @@ export const Description = styled.p`
     font-weight: 400;
     font-size: 1rem;
 `
+
+export const TrabalheConoscoText = styled.p`
+    font-size: 14px;
+    font-weight: 400;
+    color: #61758A;
+    cursor: pointer;
+    margin-bottom: 1rem;
+`

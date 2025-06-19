@@ -1,0 +1,52 @@
+[
+  {
+    "tipoConsulta": "Consulta de Podologia",
+    "dataConsulta": "22 de maio de 2025",
+    "status": "Concluída"
+  },
+  {
+    "tipoConsulta": "Avaliação Inicial",
+    "dataConsulta": "18 de maio de 2025",
+    "status": "Cancelada"
+  },
+  {
+    "tipoConsulta": "Teleconsulta",
+    "dataConsulta": "15 de maio de 2025",
+    "status": "Concluída"
+  },
+  {
+    "tipoConsulta": "Consulta de Retorno",
+    "dataConsulta": "10 de maio de 2025",
+    "status": "Concluída"
+  },
+  {
+    "tipoConsulta": "Consulta de Podologia",
+    "dataConsulta": "05 de maio de 2025",
+    "status": "Faltou"
+  },
+  {
+    "tipoConsulta": "Tratamento de Unha Encravada",
+    "dataConsulta": "28 de abril de 2025",
+    "status": "Concluída"
+  },
+  {
+    "tipoConsulta": "Consulta de Podologia",
+    "dataConsulta": "20 de abril de 2025",
+    "status": "Cancelada"
+  },
+  {
+    "tipoConsulta": "Teleconsulta",
+    "dataConsulta": "15 de abril de 2025",
+    "status": "Concluída"
+  },
+  {
+    "tipoConsulta": "Consulta de Retorno",
+    "dataConsulta": "08 de abril de 2025",
+    "status": "Faltou"
+  },
+  {
+    "tipoConsulta": "Consulta de Podologia",
+    "dataConsulta": "01 de abril de 2025",
+    "status": "Concluída"
+  }
+]

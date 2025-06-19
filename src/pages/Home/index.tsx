@@ -4,7 +4,8 @@ import {
     HomeContainer,
     Logo,
     Subtitle,
-    TextContainer
+    TextContainer,
+    TrabalheConoscoText
 } from "./style";
 
 import LogoIcon from '../../assets/logo.jpg'
@@ -26,8 +27,8 @@ const Home = () => {
             <ButtonContainer>
                 <Button text="Criar conta" bgcolor="#DBE8F2" color="#2E3337" endpoint="/criar"/>
                 <Button text="Entrar" endpoint="/login"/>
+                <TrabalheConoscoText>Trabalhe Conosco</TrabalheConoscoText>
             </ButtonContainer>
-
         </HomeContainer>
     )
 }
