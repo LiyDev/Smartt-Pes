@@ -23,10 +23,11 @@ interface Props {
 }
 
 const Button = ({bgcolor, color, text, endpoint}: Props) => {
-        const navigate = useNavigate();
+    
+    const navigate = useNavigate();
 
     return (
-        <ButtonContainer $bgcolor={bgcolor} $color={color} onClick={() => navigate(endpoint)}>
+        <ButtonContainer $bgcolor={bgcolor} $color={color} onClick={() => navigate(endpoint)} rel="noreferrer">
             {text}
         </ButtonContainer>
     )
