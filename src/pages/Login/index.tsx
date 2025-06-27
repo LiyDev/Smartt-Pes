@@ -19,9 +19,9 @@ const Login = () => {
 
     return (
         <LoginContainer>
-            <Header title="Entrar"/>
+            <Header title="Entrar" isHome={true}/>
             <LogoContainer>
-                <Logo src={LogoIcon}/>
+                <a href="/"><Logo src={LogoIcon}/></a>
             </LogoContainer>
             <FormLogin onSubmit={handleSubmit}>
                 <Label text="Email ou nome de usuário" labelFor="email"/>

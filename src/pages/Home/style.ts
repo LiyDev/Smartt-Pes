@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
 export const HomeContainer = styled.div`
-    height: 100vh;
-    width: 100vw;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem 0;
 `
 
 export const ButtonContainer = styled.div`
@@ -27,6 +27,7 @@ export const TextContainer = styled.div`
 export const Logo = styled.img`
     width: 300px;
     height: 300px;
+    border-radius: 100%;
 `
 
 export const Subtitle = styled.h2`

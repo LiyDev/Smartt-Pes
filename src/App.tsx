@@ -7,22 +7,46 @@ import Services from "./pages/ServicesPage"
 import Consulta from "./pages/Consulta"
 import Teleconsulta from "./pages/TeleConsulta"
 import Historico from "./pages/Historico"
+import Planos from "./pages/Planos"
+import Podomoto from "./pages/Podomoto"
+import Tratamentos from "./pages/Tratamentos"
+import Perfil from "./pages/Perfil"
+import MobilePreview from "./components/Mobile"
+import { useEffect, useState } from "react"
 
 function App() {
+
+  const [isMobile, setIsMobile] = useState(false);
+
+        useEffect(() => {
+          if(window.innerWidth <= 500){
+            setIsMobile(true);
+            console.log(window.innerWidth)
+          } else {
+            setIsMobile(false)
+                        console.log(window.innerWidth)
+
+          }
+        }, [])
+
   return (
+        // <div className="mobile-frame">
     <BrowserRouter>
       <Routes>
+        {isMobile ?
         <Route path='/' element={<Home/>} />
+          : 
+        <Route path='/' element={<MobilePreview/>}/>
+        }
         <Route path='/criar' element={<Register/>} />
         <Route path='/login' element={<Login/>} />
         <Route path='/home' element={<Services/>} />
         <Route path='/agendamento' element={<Consulta/>} />
         <Route path='/teleconsulta' element={<Teleconsulta/>} />
-        <Route path='/tratamentos' element={<>tratamentos</>} />
-        <Route path='/podomoto' element={<>podomoto</>} />
-        <Route path='/servicos' element={<>servicos</>} />
-        <Route path='/planos' element={<>planos</>} />
-        <Route path='/perfil' element={<>perfil</>} />
+        <Route path='/podomoto' element={<Podomoto/>} />
+        <Route path='/servicos' element={<Tratamentos/>} />
+        <Route path='/planos' element={<Planos/>} />
+        <Route path='/perfil' element={<Perfil/>} />
         <Route path='/historico' element={<Historico/>} />
         <Route path="*" element={<Navigate to="/" replace/>}/>
       </Routes>

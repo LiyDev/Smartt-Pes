@@ -24,6 +24,7 @@ export const FormRegister = styled.form`
 export const Logo = styled.img`
     width: 150px;
     height: auto;
+    border-radius: 100%;
 `
 
 
