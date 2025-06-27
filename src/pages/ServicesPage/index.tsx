@@ -6,7 +6,6 @@ import {
   CalendarCheck,
   Video,
   FileText,
-  Heart,
   User,
   Clock,
   Bell,
