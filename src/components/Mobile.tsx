@@ -12,7 +12,7 @@ const MobilePreview = () => {
       marginTop:'2rem'
     }}>
       <iframe
-        src="http://localhost:5173/"
+        src="https://smartt-pes.vercel.app//"
         title="Mobile View"
         width="100%"
         height="100%"
