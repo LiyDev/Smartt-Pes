@@ -1,0 +1,32 @@
+[
+  {
+    "nome": "Bronze",
+    "preco": "49,90",
+    "beneficios": [
+      "1 consulta por mês",
+      "Desconto de 10% em outros serviços",
+      "Acesso ao aplicativo"
+    ]
+  },
+  {
+    "nome": "Silver",
+    "preco": "79,90",
+    "beneficios": [
+      "2 consultas por mês",
+      "Desconto de 15% em outros serviços",
+      "Acesso ao aplicativo",
+      "Consultas ilimitadas online"
+    ]
+  },
+  {
+    "nome": "Gold",
+    "preco": "119,90",
+    "beneficios": [
+      "Consultas ilimitadas",
+      "Desconto de 20% em outros serviços",
+      "Acesso ao aplicativo",
+      "Consultas ilimitadas online",
+      "Atendimento domiciliar (1 por mês)"
+    ]
+  }
+]
