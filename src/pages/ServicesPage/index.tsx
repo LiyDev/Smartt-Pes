@@ -14,9 +14,6 @@ import {
 } from 'lucide-react';
 
 const Services = () => {
-    
-    //fazer função para lidar com logout
-
     const navigate = useNavigate();
 
     return (
@@ -32,10 +29,6 @@ const Services = () => {
                     <Video size={24} color="#27ae60" />
                     Teleconsulta
                 </MenuButton>
-                {/* <MenuButton onClick={() => navigate('/tratamentos')}>
-                    <Heart size={24} color="#e74c3c" />
-                    Tratamentos
-                </MenuButton>                 */}
                 <MenuButton onClick={() => navigate('/podomoto')}>
                     <Bell size={24} color="#e67e22" />
                     PodoMoto

@@ -5,7 +5,7 @@ import Button from "../../components/UI/Button";
 import WhatsappLogo from '../../assets/WhatsappLogo.svg'
 
 const Consulta = () => {
-    const WhatsappUrl = 'https://api.whatsapp.com/send?phone=5599999999999&text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta.'
+    const WhatsappUrl = 'https://api.whatsapp.com/send?phone=557197272920&text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta.'
     return (
         <ConsultaContainer>
             <Header title="Agendar Consulta"/>
