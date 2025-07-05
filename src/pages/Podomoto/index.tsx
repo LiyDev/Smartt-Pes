@@ -30,7 +30,7 @@ const Podomoto = () => {
                     </GuideIconContainer>
                     <GuideTextContainer>
                         <GuideTitle>1. Contato Inicial</GuideTitle>
-                        <GuideText>Ligue para nossa central de atendimento 24 horas.</GuideText>
+                        <GuideText>Ligue para nossa central de atendimento.</GuideText>
                     </GuideTextContainer>
                 </PodomotoGuideWrapper>
 

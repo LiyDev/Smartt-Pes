@@ -11,7 +11,8 @@ const Teleconsulta = () => {
             <Header title="Teleconsulta"/>
             <TeleconsultaFrame src={TeleconsultaImg}/>
             <TeleconsultaText>
-                A teleconsulta é uma consulta médica realizada remotamente, utilizando tecnologias de comunicação como videoconferência. Essa modalidade permite que pacientes recebam atendimento médico sem a necessidade de deslocamento físico até um consultório ou clínica.
+                A teleconsulta é um atendimento online, por vídeo, onde o profissional de saúde (médico ou podólogo) avalia seus sintomas, orienta os cuidados iniciais e, se necessário, agenda um atendimento presencial.
+                É prática, segura e feita com todo cuidado e sigilo que você merece.
             </TeleconsultaText>
             <ButtonContainer>
                 <Button text="Iniciar Teleconsulta" endpoint="/home"/>
