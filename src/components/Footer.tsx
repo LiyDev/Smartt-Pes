@@ -4,6 +4,7 @@ import {
     Package,
     User
 } from 'lucide-react';
+import { useNavigate } from 'react-router';
 import styled from 'styled-components';
 
 const FooterContainer = styled.div<{$position?: string}>`
@@ -40,21 +41,24 @@ interface Props {
 }
 
 const Footer = ( {position}: Props) => {
+    
+    const navigate = useNavigate();
+
     return (
         <FooterContainer $position={position}>
-            <FooterButton>
+            <FooterButton onClick={() => { navigate('/home')}}>
                 <Home size={24}/>
                 <FooterLabel>Início</FooterLabel>
             </FooterButton>
-            <FooterButton>
+            <FooterButton onClick={() => { navigate('/agendamento')}}>
                 <Layers size={24}/>
                 <FooterLabel>Consultas</FooterLabel>
             </FooterButton>
-            <FooterButton>
+            <FooterButton onClick={() => { navigate('/servicos')}}>
                 <Package size={24}/>
                 <FooterLabel>Serviços</FooterLabel>
             </FooterButton>
-            <FooterButton>
+            <FooterButton onClick={() => { navigate('/perfil')}}>
                 <User size={24}/>
                 <FooterLabel>Perfil</FooterLabel>
             </FooterButton>

@@ -13,6 +13,7 @@ import Tratamentos from "./pages/Tratamentos"
 import Perfil from "./pages/Perfil"
 import MobilePreview from "./components/Mobile"
 import { useEffect, useState } from "react"
+import Sobre from "./pages/Sobre"
 
 function App() {
 
@@ -21,16 +22,12 @@ function App() {
         useEffect(() => {
           if(window.innerWidth <= 500){
             setIsMobile(true);
-            console.log(window.innerWidth)
           } else {
             setIsMobile(false)
-                        console.log(window.innerWidth)
-
           }
         }, [])
 
   return (
-        // <div className="mobile-frame">
     <BrowserRouter>
       <Routes>
         {isMobile ?
@@ -48,6 +45,7 @@ function App() {
         <Route path='/planos' element={<Planos/>} />
         <Route path='/perfil' element={<Perfil/>} />
         <Route path='/historico' element={<Historico/>} />
+        <Route path='/sobre' element={<Sobre/>} />
         <Route path="*" element={<Navigate to="/" replace/>}/>
       </Routes>
     </BrowserRouter>

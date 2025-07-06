@@ -8,10 +8,6 @@ import { useNavigate } from "react-router";
 const Login = () => {
     
     const navigate = useNavigate();
-
-    //fazer lógica pra o submit ir pra uma tela de entrada;
-    //fazer campo de erro personalizado (?)
-
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         navigate("/home")
