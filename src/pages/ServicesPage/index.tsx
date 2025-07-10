@@ -10,7 +10,8 @@ import {
   Clock,
   Bell,
   Layers,
-  LogOut
+  LogOut,
+  Info
 } from 'lucide-react';
 
 const Services = () => {
@@ -38,7 +39,7 @@ const Services = () => {
                     Serviços
                 </MenuButton>
                 <MenuButton onClick={() => navigate('/planos')}>
-                    <FileText size={24} color="#9b59b6" />
+                    <FileText size={24} color="#b500fd" />
                     Planos
                 </MenuButton>
                 <MenuButton onClick={() => navigate('/perfil')}>
@@ -46,8 +47,12 @@ const Services = () => {
                     Perfil
                 </MenuButton>
                 <MenuButton onClick={() => navigate('/historico')}>
-                    <Clock size={24} color="#8e44ad" />
+                    <Clock size={24} color="#5c3f68" />
                     Histórico
+                </MenuButton>
+                <MenuButton onClick={() => navigate('/sobre')}>
+                    <Info size={24} color="#347bd8" />
+                    Sobre
                 </MenuButton>
                 <MenuButton onClick={() => navigate('/')}>
                     <LogOut size={24} />
