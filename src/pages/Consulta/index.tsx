@@ -27,9 +27,7 @@ import { ConsultaData, ConsultaTipo } from "../Historico/style";
 import { useNavigate } from "react-router";
 
 const Consulta = () => {
-  const WhatsappUrl =
-    "https://api.whatsapp.com/send?phone=557197272920&text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta.";
-
+    const WhatsappUrl = 'https://api.whatsapp.com/send?phone=557196692660&text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta.'
     const navigate = useNavigate();
 
   return (
