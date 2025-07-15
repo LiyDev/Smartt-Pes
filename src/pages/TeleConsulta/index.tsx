@@ -1,6 +1,6 @@
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
-import { TeleconsultaContainer, TeleconsultaFrame, TeleconsultaText } from "./style";
+import { ButtonClick, TeleconsultaContainer, TeleconsultaFrame, TeleconsultaText } from "./style";
 import TeleconsultaImg from '../../assets/teleconsulta.jpg'
 import { ButtonContainer } from "../Home/style";
 import Button from "../../components/UI/Button";
@@ -15,7 +15,7 @@ const Teleconsulta = () => {
                 É prática, segura e feita com todo cuidado e sigilo que você merece.
             </TeleconsultaText>
             <ButtonContainer>
-                <Button text="Iniciar Teleconsulta" endpoint="/home"/>
+                <ButtonClick href="https://meet.google.com/"><Button text="Iniciar Teleconsulta" endpoint=""/></ButtonClick>
                 <Button text="Agendar Teleconsulta" endpoint="/home" color="#2E3337" bgcolor="#DBE8F2"/>
             </ButtonContainer>
             <Footer/>
