@@ -14,6 +14,7 @@ import Perfil from "./pages/Perfil"
 import MobilePreview from "./components/Mobile"
 import { useEffect, useState } from "react"
 import Sobre from "./pages/Sobre"
+import EditarConsulta from "./pages/EditarConsulta"
 
 function App() {
 
@@ -46,6 +47,7 @@ function App() {
         <Route path='/perfil' element={<Perfil/>} />
         <Route path='/historico' element={<Historico/>} />
         <Route path='/sobre' element={<Sobre/>} />
+        <Route path='/detalhes' element={<EditarConsulta/>} />
         <Route path="*" element={<Navigate to="/" replace/>}/>
       </Routes>
     </BrowserRouter>

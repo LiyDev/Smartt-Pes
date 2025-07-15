@@ -18,3 +18,7 @@ export const TeleconsultaText = styled.p`
     font-family: 'Lexend', sans-serif;
     text-align: justify;
 `
+
+export const ButtonClick = styled.a`
+    width: 100%;
+`

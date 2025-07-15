@@ -33,16 +33,20 @@ const Perfil = () => {
             infoText="ana.silva@email.com"
             infoIcon={LucideMail}
             infoTitle="Email"
+            sizeIcon={22}
           />
           <ProfileInfoCard
             infoText="(11) 99999-8888"
             infoIcon={LucidePhone}
             infoTitle="Telefone"
+            sizeIcon={22}
+            
           />
           <ProfileInfoCard
             infoText="Rua das Flores, 123"
             infoIcon={LucideLocationEdit}
             infoTitle="Endereço"
+            sizeIcon={22}
           />
         </SecaoContainer>
         <SecaoContainer>
@@ -51,6 +55,7 @@ const Perfil = () => {
             infoText="Sem plano mensal"
             infoIcon={LucideHeart}
             infoTitle="Plano Atual"
+            sizeIcon={22}
           />
         </SecaoContainer>
       </WrapperPerfil>

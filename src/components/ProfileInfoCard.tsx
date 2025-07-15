@@ -34,14 +34,15 @@ interface Props {
     infoText: string,
     infoTitle: string,
     infoIcon: React.ElementType,
+    sizeIcon: number
 }
 
-const ProfileInfoCard = ( {infoText, infoTitle, infoIcon}: Props ) => {
+const ProfileInfoCard = ( {infoText, infoTitle, infoIcon, sizeIcon}: Props ) => {
   const Icon = infoIcon;
   return (
       <InformacoesCard>
         <InformacoesIconContainer>
-          <Icon size={22} color={'green'} />
+          <Icon size={sizeIcon} color={'green'} />
         </InformacoesIconContainer>
         <InformacoesTextContainer>
           <InformacoesTitle>
