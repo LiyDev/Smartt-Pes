@@ -8,10 +8,18 @@ import {
   SobreWrapper,
 } from "./style";
 import sobreIcon from "../../assets/SobreIcon.jpg";
+import { useEffect, useState } from "react";
 
 const Sobre = () => {
+
+  const [isIphone, setIsIphone] = useState(false);
+  useEffect(() => {
+      const userAgentDevice = navigator.userAgent.toLowerCase();
+      setIsIphone(userAgentDevice.includes('iphone'));
+  },[])    
+  
   return (
-    <SobreContainer>
+    <SobreContainer $paddingIphone={isIphone}>
       <Header title="Sobre a podologia" />
       <SobreImageHeader src={sobreIcon} />
 

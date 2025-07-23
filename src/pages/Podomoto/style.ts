@@ -1,11 +1,12 @@
 import styled from "styled-components";
 
-export const PodomotoContainer = styled.div`
+export const PodomotoContainer = styled.div<{$paddingIphone?: boolean}>`
     width: 100vw;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     align-items: center;
+    padding-bottom: ${props => props.$paddingIphone ? 'calc(80px + env(safe-area-inset-bottom))' : 0};
 `
 export const PodomotoTextContainer = styled.div`
     width: 90%;

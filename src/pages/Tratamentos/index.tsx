@@ -14,11 +14,19 @@ import {
 
 import { especialidades } from '../../services/tratamentosMock.ts';
 import { ChevronRight } from 'lucide-react';
+import { useEffect, useState } from "react";
 
 
 const Tratamentos = () => {
+
+    const [isIphone, setIsIphone] = useState(false);
+    useEffect(() => {
+        const userAgentDevice = navigator.userAgent.toLowerCase();
+        setIsIphone(userAgentDevice.includes('iphone'));
+    },[]) 
+
     return (
-        <TratamentosContainer>
+        <TratamentosContainer $paddingIphone={isIphone}>
             <Header title="Serviços"/>
             <PageTitle>Tratamentos</PageTitle>
             <Wrapper>

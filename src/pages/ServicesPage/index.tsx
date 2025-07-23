@@ -13,12 +13,19 @@ import {
   LogOut,
   Info
 } from 'lucide-react';
+import { useEffect, useState } from "react";
 
 const Services = () => {
     const navigate = useNavigate();
+    
+    const [isIphone, setIsIphone] = useState(false);
+    useEffect(() => {
+        const userAgentDevice = navigator.userAgent.toLowerCase();
+        setIsIphone(userAgentDevice.includes('iphone'));
+    },[])    
 
     return (
-        <ServicesContainer>
+        <ServicesContainer $paddingIphone={isIphone}>
             <Header title="Smartt Pés" isHome={true} />
             <MenuTitle>Menu Inicial</MenuTitle>
             <MenuContainer>

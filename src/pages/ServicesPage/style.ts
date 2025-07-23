@@ -1,11 +1,10 @@
 import styled from "styled-components";
 
-export const ServicesContainer = styled.div`
+export const ServicesContainer = styled.div<{$paddingIphone?: boolean}>`
     width: 100vw;
-    height: 100vh;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    padding-bottom: ${props => props.$paddingIphone ? 'calc(80px + env(safe-area-inset-bottom))' : 0};
 `
 
 export const MenuContainer = styled.div`

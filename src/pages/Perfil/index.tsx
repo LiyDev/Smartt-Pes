@@ -14,10 +14,18 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import ProfileInfoCard from "../../components/ProfileInfoCard";
 import { LucideMail, LucidePhone, LucideLocationEdit, LucideHeart } from "lucide-react";
+import { useEffect, useState } from "react";
 
 const Perfil = () => {
+
+    const [isIphone, setIsIphone] = useState(false);
+    useEffect(() => {
+        const userAgentDevice = navigator.userAgent.toLowerCase();
+        setIsIphone(userAgentDevice.includes('iphone'));
+    },[]) 
+
   return (
-    <PerfilContainer>
+    <PerfilContainer $paddingIphone={isIphone}>
       <Header title="Perfil" />
       <WrapperPerfil>
         <FotoPerfilContainer>
