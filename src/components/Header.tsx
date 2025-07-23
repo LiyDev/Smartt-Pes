@@ -56,7 +56,7 @@ const Header = ({title, isHome}: Props) => {
     return (
         <HeaderContainer>
             <BackIconContainer>
-                {isHome ? <></> : <BackIcon src={BackArrowSvg} onClick={() => navigate('/home')}/>}
+                {isHome ? <BackIcon src={BackArrowSvg} onClick={() => navigate('/')}/>: <BackIcon src={BackArrowSvg} onClick={() => navigate(-1)}/>}
             </BackIconContainer>
             <HeaderTitle>
                 {title}

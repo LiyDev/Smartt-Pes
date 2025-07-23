@@ -4,11 +4,19 @@ import Header from "../../components/Header";
 import ProfileInfoCard from "../../components/ProfileInfoCard";
 import { ButtonContainer, EditarConsultaContainer, SecaoContainer, SecaoTitle, Wrapper } from "./style";
 import Button from "../../components/UI/Button";
+import { useEffect, useState } from "react";
 
 
 const EditarConsulta = () => {
+
+    const [isIphone, setIsIphone] = useState(false);
+    useEffect(() => {
+        const userAgentDevice = navigator.userAgent.toLowerCase();
+        setIsIphone(userAgentDevice.includes('iphone'));
+    },[]) 
+
   return (
-    <EditarConsultaContainer>
+    <EditarConsultaContainer $paddingIphone={isIphone}>
       <Header title="Detalhes da Consulta" />
       <Wrapper>
         <SecaoContainer>

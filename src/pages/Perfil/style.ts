@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 
-export const PerfilContainer = styled.div`
+export const PerfilContainer = styled.div<{$paddingIphone?: boolean}>`
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: ${props => props.$paddingIphone ? 'calc(80px + env(safe-area-inset-bottom))' : 0};
 `;
 
 export const WrapperPerfil = styled.div`

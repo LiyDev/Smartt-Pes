@@ -6,10 +6,18 @@ import homeIcon from '../../assets/MotoPodoCasaIcon.png'
 import personIcon from '../../assets/MotoPodoPessoaIcon.png'
 import Button from "../../components/UI/Button"
 import { ButtonContainer } from "../Home/style"
+import { useEffect, useState } from "react"
 
 const Podomoto = () => {
+
+    const [isIphone, setIsIphone] = useState(false);
+    useEffect(() => {
+        const userAgentDevice = navigator.userAgent.toLowerCase();
+        setIsIphone(userAgentDevice.includes('iphone'));
+    },[]) 
+    
     return (
-        <PodomotoContainer>
+        <PodomotoContainer $paddingIphone={isIphone}>
             <Header title="Emergência"/>
 
             <PodomotoTextContainer>

@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
-export const SobreContainer = styled.div`
+export const SobreContainer = styled.div<{$paddingIphone?: boolean}>`
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: ${props => props.$paddingIphone ? 'calc(80px + env(safe-area-inset-bottom))' : 0};
 `
 
 export const SobreWrapper = styled.div`
@@ -14,6 +15,7 @@ export const SobreWrapper = styled.div`
 `
 
 export const SobreImageHeader = styled.img`
+    width: 100%;
     margin-bottom: 1.5rem;
 `
 

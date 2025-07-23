@@ -25,13 +25,20 @@ import { ChevronRight } from "lucide-react";
 import LogoCalendario from "../../assets/HistoricoCalendarioLogo.svg";
 import { ConsultaData, ConsultaTipo } from "../Historico/style";
 import { useNavigate } from "react-router";
+import { useEffect, useState } from "react";
 
 const Consulta = () => {
     const WhatsappUrl = 'https://api.whatsapp.com/send?phone=557196692660&text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta.'
     const navigate = useNavigate();
 
+    const [isIphone, setIsIphone] = useState(false);
+    useEffect(() => {
+        const userAgentDevice = navigator.userAgent.toLowerCase();
+        setIsIphone(userAgentDevice.includes('iphone'));
+    },[])    
+    
   return (
-    <ConsultaContainer>
+    <ConsultaContainer $paddingIphone={isIphone}>
       <Header title="Agendar Consulta" />
       <AgendaContainer>
         <LabelConsulta>Escolha a especialidade:</LabelConsulta>

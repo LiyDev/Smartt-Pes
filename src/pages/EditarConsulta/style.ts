@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
-export const EditarConsultaContainer = styled.div`
+export const EditarConsultaContainer = styled.div<{$paddingIphone?: boolean}>`
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: ${props => props.$paddingIphone ? 'calc(80px + env(safe-area-inset-bottom))' : 0};
 `
 
 export const Wrapper = styled.div`
