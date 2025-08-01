@@ -3,8 +3,8 @@
     "nome": "Bronze",
     "preco": "500,00",
     "beneficios": [
-      "Consulta",
-      "Profilaxia",
+      "Consulta (especialistas)",
+      "Podoprofilaxia",
       "Telepodo"
     ]
   },
@@ -12,8 +12,8 @@
     "nome": "Silver",
     "preco": "800,00",
     "beneficios": [
-      "Consulta",
-      "Profilaxia",
+      "Consulta (especialistas)",
+      "Podoprofilaxia",
       "Procedimento",
       "1 Retorno",
       "1 Telepodo"
@@ -23,12 +23,12 @@
     "nome": "Gold",
     "preco": "1200,00",
     "beneficios": [
-      "Consulta",
-      "2 Profilaxia",
-      "2 Retorno",
-      "1 Telepodo",
+      "Consulta (especialistas)",
+      "Podoprofilaxias (2 Sessões)",
       "1 Procedimento",
-      "1 Podomoto"
+      "2 Retornos",
+      "1 Telepodo",
+      "1 PodoMoto"
     ]
   }
 ]
